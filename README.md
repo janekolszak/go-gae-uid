@@ -1,6 +1,10 @@
 # go-gae-uid
-Used the code from: https://cloud.google.com/appengine/articles/sharding_counters
-And this library https://github.com/speps/go-hashids for generating hash uids.
+
+The library generates unique, string IDs of a given minimal length.
+As an optimization it uses sharding counters - code copied from a [GAE tutorial](https://cloud.google.com/appengine/articles/sharding_counters).
+
+**Depends on**:
+* [hashid library](https://github.com/speps/go-hashids).
 
 ### Setup
 <pre>go get github.com/janekolszak/go-gae-uid</pre>
